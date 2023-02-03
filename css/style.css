@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.cover {
+    /* border: 3px solid #000000; */
+    padding: 10px;
+    width: 250px;
+    position: absolute;
+    transform: translate(211px);
+    top: 10rem;
+    right: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    transition: 1s;
+}
+
+.animated-hide {
+    transform: translate(0px);
+    transition: 1s;
+}
+
+
+.main-container {
+    border: 1px solid;
+    width: 200px;
+    padding: 1rem .5rem;
+}
+
+.x {
+    width: 30px;
+    height: 30px;
+    background-color: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x img {
+    width: 20px;
+    animation: myMove 2s infinite;
+}
+
+@keyframes myMove {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        transform: rotate(0);
+
+    }
+}
+
+ul li {
+    list-style: none;
+    height: 20px;
+    width: 20px;
+    margin: .5rem 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li:nth-child(1) {
+    background-color: #000000;
+}
+
+ul li:nth-child(2) {
+    background-color: #59b413;
+}
+
+ul li:nth-child(3) {
+    background-color: #c9d218;
+}
+
+ul li:nth-child(4) {
+    background-color: #12bea5;
+}
+
+ul li:nth-child(5) {
+    background-color: #0e97d6;
+}
+
+ul li:nth-child(6) {
+    background-color: #0f2cea;
+}
+
+ul li:nth-child(7) {
+    background-color: #8c14db;
+}
+
+ul li:nth-child(8) {
+    background-color: #e509b9;
+}
+
+ul li:nth-child(9) {
+    background-color: #dc1010;
+}
+
+ul li:nth-child(10) {
+    background-color: #09bae6;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+
+}
+p{
+
+    font-family: 'Dosis', sans-serif;
+}
+h1,
+p {
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
